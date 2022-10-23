@@ -15,27 +15,27 @@
                  <!---การสร้างฟอร์มลงทะเบียน--->
                 <div class="input-box">
                     <span class="details">Full name</span>
-                    <input type="text" placeholder="Enter your name" required autofocus>
+                    <input type="text" name="fullname" placeholder="Enter your first name and last name" required autofocus>
                 </div>
                 <div class="input-box">
                     <span class="details">Username</span>
-                    <input type="text" placeholder="Enter your username" required>
+                    <input type="text" name="username" placeholder="Enter your username" required>
                 </div>  
                 <div class="input-box">
                     <span class="details">Email</span>
-                    <input type="email" placeholder="Enter your email" required>
+                    <input type="email" neme="email" placeholder="Enter your email" required>
                 </div>  
                 <div class="input-box">
                     <span class="details">Phone</span>
-                    <input type="text" placeholder="Enter your number" required>
+                    <input type="text" name="phone" placeholder="Enter your number" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Password</span>
-                    <input type="password" placeholder="Enter your password" required>
+                    <input type="password" name="password" placeholder="Enter your password" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Confirm password</span>
-                    <input type="password" placeholder="Confirm your password" required>
+                    <input type="password" name="passwordConfirm" placeholder="Confirm your password" required>
                 </div>
             </div>
              <!---การสร้างฟอร์มเลือกเพศ--->
