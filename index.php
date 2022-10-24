@@ -23,7 +23,7 @@
                 </div>  
                 <div class="input-box">
                     <span class="details">Email</span>
-                    <input type="email" neme="email" placeholder="Enter your email" required>
+                    <input type="email" name="email" placeholder="Enter your email" required>
                 </div>  
                 <div class="input-box">
                     <span class="details">Phone</span>
@@ -40,9 +40,9 @@
             </div>
              <!---การสร้างฟอร์มเลือกเพศ--->
             <div class="gender-details">
-                <input type="radio" name="gender" id="dot-1">
-                <input type="radio" name="gender" id="dot-2">
-                <input type="radio" name="gender" id="dot-3">
+                <input type="radio" name="gender" value="Male" id="dot-1">
+                <input type="radio" name="gender" value="Female" id="dot-2">
+                <input type="radio" name="gender" value="Prefer not to say" id="dot-3">
                 <span class="gender-title">Gender</span>
                 <div class="category">
                     <label for="dot-1">
