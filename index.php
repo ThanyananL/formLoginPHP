@@ -59,7 +59,7 @@
                     </label>
                 </div>
             </div>
-             <!---การสร้างปุ่ม--->
+            
             <div class="button">
                 <input type="submit" value="Register">
             </div>
