@@ -8,18 +8,23 @@
     $passwordConfirm = $_POST["passwordConfirm"];
     $gender = $_POST["gender"];
 
+    // เข้ารหัสผ่าน
+    $key = "faeWlcap2314sqqQLpgOfmelmfekkc";
+    $hash_hmac_password = hash_hmac("sha256","$password","$key");
+
     // บันทึกข้อมูลลงตัวแปรเก็บไว้ก่อนนะ
     $sql = "INSERT INTO login_tb(login_fullname ,login_username ,login_email ,login_phone ,login_password ,login_gender ) 
-    VALUES('$fullname','$username','$email','$phone','$password','$gender')";
+    VALUES('$fullname','$username','$email','$phone','$hash_hmac_password','$gender')";
 
     //ลงฐานข้อมูลจริงๆละ
     $result = mysqli_query($conn,$sql);
     if($result){
-        echo "บันทึกข้อมูลสำเร็จ";
+       header("Location: login.php");
     }else{
         echo mysqli_error($connect);
     }
 
+    mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>

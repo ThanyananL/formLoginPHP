@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registration แบบฟอร์มลงทะเบียน</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container"> <!--การสร้างแบบฟอร์ม-->
-        <div class="title">Registration</div> <!--หัวข้อเรื่อง-->
-        <form action="register.php" method="POST"> <!--ฟอร์ม-->
-            <div class="user-details"> <!--สร้างกล่องเก็บการใส่ข้อมูล-->
-                 <!---การสร้างฟอร์มลงทะเบียน--->
+    <div class="container">
+        <!--การสร้างแบบฟอร์ม-->
+        <div class="title">Registration</div>
+        <!--หัวข้อเรื่อง-->
+        <form action="register.php" method="POST">
+            <!--ฟอร์ม-->
+            <div class="user-details">
+                <!--สร้างกล่องเก็บการใส่ข้อมูล-->
+                <!---การสร้างฟอร์มลงทะเบียน--->
                 <div class="input-box">
                     <span class="details">Full name</span>
                     <input type="text" name="fullname" placeholder="Enter your first name and last name" required autofocus>
@@ -20,11 +28,11 @@
                 <div class="input-box">
                     <span class="details">Username</span>
                     <input type="text" name="username" placeholder="Enter your username" required>
-                </div>  
+                </div>
                 <div class="input-box">
                     <span class="details">Email</span>
                     <input type="email" name="email" placeholder="Enter your email" required>
-                </div>  
+                </div>
                 <div class="input-box">
                     <span class="details">Phone</span>
                     <input type="text" name="phone" placeholder="Enter your number" required>
@@ -38,7 +46,7 @@
                     <input type="password" name="passwordConfirm" placeholder="Confirm your password" required>
                 </div>
             </div>
-             <!---การสร้างฟอร์มเลือกเพศ--->
+            <!---การสร้างฟอร์มเลือกเพศ--->
             <div class="gender-details">
                 <input type="radio" name="gender" value="Male" id="dot-1">
                 <input type="radio" name="gender" value="Female" id="dot-2">
@@ -59,11 +67,16 @@
                     </label>
                 </div>
             </div>
-             <!---การสร้างปุ่ม--->
-            <div class="button">
-                <input type="submit" value="Register">
+            <!---การสร้างปุ่ม--->
+            <div class="button row justify-content-around">
+                <div class="col-4"><input type="submit" value="Register"></div>
+                <div class="col-4"><a href="login.php"><input type="button" value="Login"></a></div>
             </div>
+            <!-- <div class="button">
+                <a href="login.php"><input type="button" value="Login"></a>
+            </div> -->
         </form>
     </div>
 </body>
+
 </html>
